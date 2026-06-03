@@ -436,7 +436,7 @@ export default function Home() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="max-w-3xl mx-auto text-center">
           <motion.h2 variants={fadeUp} className="text-4xl font-bold mb-4">{t.contact.title}</motion.h2>
           <motion.div variants={fadeUp} className="flex justify-center gap-4 mt-6">
-            <a href={`mailto:${t.contact.email}`} className="px-8 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-700 transition-colors">
+            <a href={`mailto:${t.contact.email}`} className="px-8 py-3 bg-[#ea580c] text-white rounded-full font-medium hover:bg-[#c2410c] transition-colors">
               {t.contact.cta}
             </a>
             <a href="https://www.linkedin.com/in/mingyu-park-97a208282" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-gray-300 rounded-full font-medium hover:bg-gray-50 transition-colors">
@@ -449,7 +449,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-sm text-gray-400 border-t border-gray-100">
-        © 2026 Mingyu. All rights reserved.
+        <p>© 2026 Mingyu. All rights reserved.</p>
+        <p className="mt-3"><span className="inline-block w-2.5 h-2.5 rounded-full bg-[#ea580c] align-middle mr-1"></span><span className="text-[0.65rem] font-mono text-gray-400">#ea580c</span></p>
       </footer>
     </main>
   );
